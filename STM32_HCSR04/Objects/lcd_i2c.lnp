@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\gp_drive.o"
+".\objects\i2c_drive.o"
+".\objects\lcd_1602_drive.o"
+".\objects\pcf8574_drive.o"
+".\objects\systick_time.o"
+".\objects\help_func.o"
+".\objects\time_driver.o"
+".\objects\misc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_i2c.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_usart.o"
+".\objects\gpio_stm32f10x.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\lcd_i2c.map" -o .\Objects\lcd_i2c.axf
